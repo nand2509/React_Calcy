@@ -1,0 +1,88 @@
+/* Overall page styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #291b1b;
+  
+}
+
+/* Overall calculator container */
+.calculator {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+/* Input field */
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Calculator buttons */
+.button {
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* Green button color */
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Result display */
+.result {
+  margin-top: 10px;
+  font-size: 32px;
+  text-align: right;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  /* Adjust the calculator width and font size for smaller screens */
+  .calculator {
+    width: 100%;
+  }
+
+  .input {
+    font-size: 18px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  .result {
+    font-size: 24px;
+  }
+}
+
+/* Add more media queries as needed for different breakpoints */
